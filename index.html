@@ -39,18 +39,11 @@
         await provider.send("eth_requestAccounts", []);
       const signer = provider.getSigner();
 	  
-	  });
-	  
-	  
-	  
-	    
-
-      (async function () {
-        let userAddress = await signer.getAddress();
+	  let userAddress = await signer.getAddress();
         
 		  
 		  console.log(userAddress);
-      
+	  
 	  
 	  })();
 	  
