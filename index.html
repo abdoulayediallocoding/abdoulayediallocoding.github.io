@@ -23,38 +23,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   
-  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
-        type="application/javascript"></script>
-  
-  
-  
-  <script>
-      const provider = new ethers.providers.Web3Provider(
-        window.ethereum,
-        "any"
-      );
-      
-	  
-	  (async function () {
-        await provider.send("eth_requestAccounts", []);
-      const signer = provider.getSigner();
-	  
-	  let userAddress = await signer.getAddress();
-        
-		  
-		  console.log(userAddress);
-	  
-	  
-	  })();
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-    </script>
+ 
   
   
   
